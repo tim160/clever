@@ -25,7 +25,8 @@ class HomeController extends Controller
         }
 
         $to_name = "Timur";
-        $to_email = "no-reply@ec.com";
+        $to_email = "antonm1.manzhos@gmail.com";
+//        $to_email = "timur160@gmail.com";
 
         $data = array("firstName" => $firstName,
             "lastName" => $lastName,
@@ -35,7 +36,7 @@ class HomeController extends Controller
             "textMessage" => $textMessage
         );
         Mail::send("email.mail", $data, function ($message) use ($to_name, $to_email) {
-            $message->to($to_email, $to_name)->subject("new registration on thecleverconsulting.com");
+            $message->to($to_email, $to_name)->subject("new registration on theclarify.com");
             $message->from("no-reply@employeeconfidential.com", "Test Mail");
         });
     }

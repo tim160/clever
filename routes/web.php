@@ -19,8 +19,3 @@ Route::post('/sendFormToEmail', 'HomeController@sendformToEmail');
 
 Route::get('/getAjaXCall', 'TestController@getAjaXCall');
 Route::post('/postAjaxCall', 'HomeController@postAjaxCall');
-
-Route::get('/clear-cache', function() {
-    Artisan::call('cache:clear');
-    return "Cache is cleared";
-});

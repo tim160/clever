@@ -4,7 +4,7 @@ body {
     font-weight: 400;
     line-height: 100%;
     color: rgba(33, 64, 54, 0.8);
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 #header {
@@ -34,6 +34,10 @@ body {
     display: table-row;
 }
 
+.story-block_type_text {
+    padding: 0 15px;
+}
+
 .content, .sidebar {
     display: table-cell;
 }
@@ -47,11 +51,6 @@ body {
     align-content: stretch;
 }
 
-.content {
-    height: 90px;
-    width: 45%;
-    min-width: 1000px;
-}
 
 .positionTextSecondItem {
     height: auto;
@@ -84,6 +83,7 @@ body {
 #menu_header .greenRectangle, .greenLink {
     color: #ffffff;
 }
+
 #sendMessage {
     width: 136px;
     margin: auto;
@@ -93,6 +93,7 @@ body {
     padding: 11px 0px 11px 18px;
     color: #ffffff;
 }
+
 #contactUs {
     width: 136px;
     margin: auto;
@@ -102,6 +103,7 @@ body {
     padding: 11px 17px 11px 18px;
     color: #ffffff;
 }
+
 #meetOurTeam {
     width: 138px;
     margin: auto;
@@ -111,10 +113,12 @@ body {
     padding: 11px 3px 11px 18px;
     color: #ffffff;
 }
+
 #meetOurTeam a {
     color: #ffffff;
     text-decoration: none;
 }
+
 #menu_header .active {
     font-weight: 700;
     color: #41826E;
@@ -123,13 +127,15 @@ body {
 .defaultFontSize {
     font-size: 16px;
 }
-.centered.textOnImage p{
+
+.centered.textOnImage p {
     padding-left: 20px;
 }
 
 .defaultFontColor {
     color: #707070;
 }
+
 /*mobile menu*/
 .toggle-menu {
     background-color: rgba(0, 0, 0, 0.2);
@@ -341,17 +347,21 @@ body {
     margin: 0 0 2px;
     grid-template-columns: 30% 1fr 100px;
 }
+
 #textMessage {
     width: 97.5%;
     margin: 10px;
     height: 160px;
 }
+
 .gfield_required {
-    color: #d2722d!important;
+    color: #d2722d !important;
 }
+
 .weight500 {
     font-weight: 500;
 }
+
 .weight700 {
     font-weight: 700;
 }
@@ -392,13 +402,17 @@ body {
 }
 
 .inputStyle {
-    width: 309px;
-    height: 42px
+    /*width: 309px;*/
+    height: 42px;
+    width: 92%;
 }
+
 .inputStyleLong {
-    width: 472px;
+    /*width: 472px;*/
+    width: 91%;
     height: 42px
 }
+
 #imgWithBoat {
     width: 600px;
     height: 600px;
@@ -442,13 +456,16 @@ body {
 #footerMenu .active {
     font-weight: 700;
 }
+
 .textWidthSecondItem {
     width: 80%;
 }
+
 .textLittleWidthSecondItem {
     width: 20%;
 }
-#menu_header .nav-list{
+
+#menu_header .nav-list {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -456,16 +473,43 @@ body {
     align-items: stretch;
     align-content: stretch;
 }
+
 #contactForm input {
     margin: 10px;
 }
+
 #contactForm label {
     margin-left: 10px;
 }
 
-@media (max-width: 1110px) {
+@media (min-width: 992px) {
     .content {
-        min-width: 780px;
+        height: 90px;
+        width: 45%;
+        min-width: 1000px;
+    }
+}
+
+/*@media (max-width: 1024px) {*/
+/*    .inputStyle {*/
+/*        width: 380px;*/
+/*    }*/
+/*    .inputStyleLong {*/
+/*        width: 380px;*/
+/*    }*/
+/*}*/
+
+@media (max-width: 768px) {
+    .sidebar.left {
+        display: none;
+    }
+
+    .sidebar.right {
+        display: none;
+    }
+
+    p {
+        padding: 0 15px;
     }
 }
 
@@ -487,9 +531,11 @@ body {
     .toggle-menu {
         display: flex;
     }
+
     .centered.textOnImage {
         font-size: 20px;
     }
+
     .textWidthSecondItem {
         width: 75%;
     }
@@ -499,10 +545,12 @@ body {
     #secondItem .positionTextSecondItem {
         flex-direction: column;
     }
+
     .centered.textOnImage {
         font-size: 7px;
         line-height: normal;
     }
+
     .twoColumsOfText {
         display: flex;
         flex-direction: column;
@@ -511,62 +559,65 @@ body {
         align-items: center;
         align-content: center;
     }
+
     .serviceElementPosition {
         flex-direction: column;
     }
-    #header, #secondItem, .content {
-        max-width: 425px;
-        min-width: 425px;
-        padding-left: 15px;
-    }
+
     .firstColumn, .secondColumn {
         width: 100%;
     }
+
     .elementWithTextAndIcon {
         width: 100%;
         margin: 10px;
     }
+
     .strongTextWithImage {
         display: block;
     }
+
     .strongTextWithImage img {
         max-width: 424px;
     }
+
     #teamList .teamText {
         grid-template-columns: 100%
     }
+
     #teamList {
         padding: 0;
     }
+
     #imgWithBoat {
         width: 397px;
         height: auto;
     }
-    .textWidthSecondItem, .firstColumn p, .secondColumn p, .serviceElementPosition, .teamText {
-        width: 400px;
-    }
-    #ContactUsToday img{
+
+    #ContactUsToday img {
         width: 425px;
         height: auto;
     }
-    .inputStyleLong {
-        width: 380px;
-    }
-    .inputStyle {
-        width: 380px;
-    }
+
     .positionInput {
         flex-direction: column;
+        align-items: stretch;
     }
+
     #textMessage {
-        width: 380px;
+        width: 88%;
     }
-    #footerMenu{
+
+    .inputStyle, .inputStyleLong {
+        width: 88%;
+    }
+
+    #footerMenu {
         display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
     }
 }

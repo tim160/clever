@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
 
-    <link href="{{ asset('css/style.css?id=25') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css?id=34') }}" rel="stylesheet">
     <link href="{{ asset('css/normalize.css') }}" rel="stylesheet">
     {{--    <link rel="stylesheet" href="public/css/normalize.css">--}}
     {{--    <link rel="stylesheet" href="public/css/style.css?id=1">--}}
@@ -279,14 +279,17 @@
                     <input id="Subject" name="Subject" class="inputStyleLong" type="text">
                 </div>
             </div>
-            <div style="display: block; width: 100%">
-                <label class="fontSize22 weight700" for="textMessage">Message<span
-                            class="gfield_required">*</span></label>
-                <textarea id="textMessage" name="textMessage"></textarea>
-            </div>
+
 
 
         </div>
+
+        <div>
+            <label class="fontSize22 weight700" for="textMessage">Message<span
+                        class="gfield_required">*</span></label>
+            <textarea id="textMessage" name="textMessage"></textarea>
+        </div>
+
         <div id="sendMessage">
             <span>
                 Send Message
@@ -296,7 +299,7 @@
     <div class="sidebar right"></div>
 </div>
 
-    <div id="footer">
+<div id="footer">
         <div class="logo_for_footer"></div>
         <ul id="footerMenu">
             <li class="active">
