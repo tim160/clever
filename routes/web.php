@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,8 +16,7 @@
 Route::get('/', function () {
     return view('home/index');
 });
+Route::post('/sendFormToEmail', 'App\Http\Controllers\HomeController@sendformToEmail');
 
-Route::post('/sendFormToEmail', 'HomeController@sendformToEmail');
-
-Route::get('/getAjaXCall', 'TestController@getAjaXCall');
-Route::post('/postAjaxCall', 'HomeController@postAjaxCall');
+Route::get('/getAjaXCall', 'App\Http\Controllers\TestController@getAjaXCall');
+Route::post('/postAjaxCall', 'App\Http\Controllers\HomeController@postAjaxCall');

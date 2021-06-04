@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Validator;
 
 class HomeController extends Controller
 {
@@ -25,7 +25,7 @@ class HomeController extends Controller
         }
 
         $to_name = "Timur";
-        $to_email = "antonm1.manzhos@gmail.com";
+        $to_email = "timur160@hotmail.com";
 //        $to_email = "timur160@gmail.com";
 
         $data = array("firstName" => $firstName,
@@ -39,5 +39,6 @@ class HomeController extends Controller
             $message->to($to_email, $to_name)->subject("new registration on theclarify.com");
             $message->from("no-reply@employeeconfidential.com", "Test Mail");
         });
+        return "success";
     }
 }
