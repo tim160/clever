@@ -1,5 +1,5 @@
 Hello
-new email from http://thecleverconsulting.com/
+new email from http://theclarify.com/
 
 <p>First Name = {{$firstName}}</p>
 <p>Last Name = {{$lastName}}</p>

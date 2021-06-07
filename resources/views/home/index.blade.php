@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Clever Consulting</title>
+    <title>The Clarify Consulting</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
-
-    <link href="{{ asset('css/style.css?id=34') }}" rel="stylesheet">
+    <meta name="description" content="financial reporting and controls advisory services for publicly listed and privately held companies">
+    <link href="{{ asset('css/style.css?id=35') }}" rel="stylesheet">
     <link href="{{ asset('css/normalize.css') }}" rel="stylesheet">
     {{--    <link rel="stylesheet" href="public/css/normalize.css">--}}
     {{--    <link rel="stylesheet" href="public/css/style.css?id=1">--}}
@@ -69,7 +69,7 @@
 </div>
 
 <div id="firstItem">
-    <img src="{{ asset('fonts/jeremy-allouche-1920.jpg') }}" alt="Snow" style="width:100%;">
+    <img src="{{ asset('fonts/jeremy-allouche-1920.jpg') }}" alt="better tomorrow" style="width:100%;">
     <div class="centered textOnImage">
         <p>We are here to support you through growth, development and transformation to a
             better tomorrow
@@ -81,7 +81,7 @@
     <div class="sidebar left"></div>
     <div class="content paddingSecondItem">
         <p class="serviceText ">
-            Clever Consulting
+            Clarify Consulting
         </p>
         <div>
             <p>
@@ -108,7 +108,7 @@
 
 <div id="fourthItem" style="position:relative;">
 
-    <img src="{{ asset('fonts/secondImage.png') }}" alt="Snow" style="width:100%;">
+    <img src="{{ asset('fonts/secondImageOptimized.jpg') }}" alt="full potential" style="width:100%;">
     <div class="centered textOnImage">
         <p style="padding-left: 20px">We want to empower you to reach your full potential</p>
     </div>
@@ -121,23 +121,23 @@
         <div class="serviceElementPosition">
             <div class="elementWithTextAndIcon">
 
-                <img src="{{ asset('fonts/u_file-contract-dollar.png') }}">
+                <img src="{{ asset('fonts/u_file-contract-dollar.png') }}" alt="Financial Reporting Assistance">
                 <p>Financial Reporting Assistance</p>
             </div>
 
             <div class="elementWithTextAndIcon">
 
-                <img src="{{ asset('fonts/u_file-edit-alt.png') }}">
+                <img src="{{ asset('fonts/u_file-edit-alt.png') }}" alt="Internal Audit">
                 <p>Internal Audit (Risk, Controls, SOX readiness, Flowcharts, ERM)</p>
             </div>
 
             <div class="elementWithTextAndIcon">
-                <img src="{{ asset('fonts/u_chart-line.png') }}">
+                <img src="{{ asset('fonts/u_chart-line.png') }}" alt="Budgeting and Forecasting">
                 <p>Budgeting and Forecasting</p>
             </div>
 
             <div class="elementWithTextAndIcon">
-                <img src="{{ asset('fonts/u_chart-down.png') }}">
+                <img src="{{ asset('fonts/u_chart-down.png') }}" alt="Governance, Processes & Controls Improvements">
                 <p>Governance, Processes & Controls Improvements</p>
             </div>
         </div>
@@ -188,7 +188,7 @@
 <!--end sixthItem-->
 
 <div id="teamwork" style="position: relative">
-    <img width="100%" height="482px" src="{{ asset('fonts/newImage.jpg') }}">
+    <img src="{{ asset('fonts/newImageOptimized.jpg') }}" width="100%" alt="Teamwork begins by building trust">
     <div class="centered textOnImage">
         <p>Teamwork begins by building trust</p>
     </div>
@@ -210,7 +210,7 @@
                         <p class="weight400 fontSize16">CA, CPA – Co-Founder</p>
                     </div>
                     <p class="fontSize16">
-                        Natalia is a co-founder of Clever Consulting and has more than ten years of experience in auditing,
+                        Natalia is a co-founder of Clarify Consulting and has more than ten years of experience in auditing,
                         financial governance, budgeting and forecasting, and internal controls. Natalia believes that the success
                         of an organization starts with good governance and a sound financial management system. Developing
                         effective and tailored solutions for clients is her passion. Natalia also supports her local community by
@@ -225,7 +225,7 @@
                         <p class="weight400 fontSize16">CPA – Co-Founder</p>
                     </div>
                     <p class="fontSize16">
-                        Olya is a co-founder of Clever Consulting and has ten years of experience working with a variety of
+                        Olya is a co-founder of Clarify Consulting and has ten years of experience working with a variety of
                         clients in different industries. During that time, she has provided foundational financial services to
                         clients including financial reporting, budgeting and forecasting, controls and processes, and more. Olya’s
                         passion for logic, analytics, and numbers led her to complete a BSc in Mathematics, and solidified her
@@ -243,7 +243,7 @@
     <div class="sidebar right"></div>
 </div><!--end team-->
 <div id="ContactUsToday">
-    <img src="{{ asset('fonts/newImage2.jpg') }}" height="482px v" width="100%"/>
+    <img src="{{ asset('fonts/newImage2.jpg') }}" width="100%" alt="Contact Us Today"/>
 </div>
 
 <div id="contactForm">
@@ -317,7 +317,7 @@
         </ul>
         <div id="copyright">
             <p>
-                Copyright &copy; <?php echo date("Y"); ?> Clever Consulting. All rights reserved
+                Copyright &copy; <?php echo date("Y"); ?> Clarify Consulting. All rights reserved
             </p>
         </div>
     </div>
