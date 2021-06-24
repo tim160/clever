@@ -18,15 +18,17 @@ class HomeController extends Controller
         $textMessage = $request->textMessage;
 
         $validator = Validator::make($request->all(), [
-            'email' => 'required|email'
+            'email' => 'required|email',
+//            'g-recaptcha-response' => 'required|captcha'
         ]);
         if (count($validator->errors()->all()) > 0) {
             return "Error email, please enter right email";
         }
 
         $to_name = "Timur";
-        $to_email = "timur160@hotmail.com";
-//        $to_email = "timur160@gmail.com";
+        //$to_email = "timur160@hotmail.com";
+        $to_email = "timur160@gmail.com";
+//        $to_email = "antonm1.manzhos@gmail.com";
 
         $data = array("firstName" => $firstName,
             "lastName" => $lastName,

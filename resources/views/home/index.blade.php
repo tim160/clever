@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
     <meta name="description" content="financial reporting and controls advisory services for publicly listed and privately held companies">
-    <link href="{{ asset('css/style.css?id=35') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css?id=36') }}" rel="stylesheet">
     <link href="{{ asset('css/normalize.css') }}" rel="stylesheet">
     {{--    <link rel="stylesheet" href="public/css/normalize.css">--}}
     {{--    <link rel="stylesheet" href="public/css/style.css?id=1">--}}
@@ -16,6 +16,10 @@
           rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WFJY4ND5TQ"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-WFJY4ND5TQ'); </script>
 </head>
 <body>
 
@@ -296,6 +300,12 @@
             </span>
         </div>
     </div>
+
+{{--    <div id='recaptcha' class="g-recaptcha"--}}
+{{--         data-sitekey="6LeoeTMbAAAAACedhzH_KIdfVP5cbiNAEX8-nD1D"--}}
+{{--         data-callback="onCompleted"--}}
+{{--         data-size="invisible"></div>--}}
+
     <div class="sidebar right"></div>
 </div>
 
@@ -323,7 +333,25 @@
     </div>
 <input type="hidden" id="token" value="{{ csrf_token() }}">
 </body>
+{{--<script>--}}
+{{--    function onSubmit(token) {--}}
+{{--        document.getElementById("demo-form").submit();--}}
+{{--    }--}}
+{{--</script>--}}
+{{--<script src="https://www.google.com/recaptcha/api.js" async defer></script>--}}
+{{--<script src="https://www.google.com/recaptcha/api.js" async defer></script>--}}
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="{{ asset('js/main.js?id=8') }}"></script>
+<script type="text/javascript" src="{{ asset('js/main.js?id=12') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<!-- Link to open the modal -->
+<p style="display: none"><a href="#ex1" rel="modal:open" id="openModal">Open Modal</a></p>
+<div id="ex1" class="modal">
+    <div class="logo_header"></div>
+    <p>Thank you for your request. We will contact you as soon as possible.</p>
+</div>
 
+<div id="modalError" class="modal">
+    <div class="logo_header"></div>
+    <p>Some error during parse params</p>
+</div>
 </html>

@@ -624,3 +624,6 @@ img {
         align-content: center;
     }
 }
+.modal a.close-modal {
+    display: none !important;
+}

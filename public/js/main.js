@@ -47,7 +47,7 @@ $(document).ready(function () {
                 textMessage.css('border', 'black solid 1px');
             })
         }
-        ;
+        // grecaptcha.execute();
         if (!flag) {
             $.post("/sendFormToEmail", {
                 _token: $("#token").val(),
@@ -59,17 +59,21 @@ $(document).ready(function () {
                 textMessage: $("#textMessage").val().trim()
             })
                 .done(function (data) {
-                    alert("Data Loaded: " + data);
+                    $("#ex1").modal();
                 })
                 .fail(function (data) {
                     console.log(data);
-                    alert("error");
-                })
-                .always(function (data) {
-                    console.log(data);
-                    alert("finished");
+                    //alert("some error during parse params");
+                    $('#modalError').modal();
                 });
         }
 
     });
+
+    let onCompleted;
+    onCompleted = function() {
+        console.log('captcha completed.');
+        $('#myForm').submit();
+        alert('wait to check for "captcha completed" in the console.');
+    }
 });
